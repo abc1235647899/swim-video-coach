@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swim Video Coach — demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="app">
+      <div>
+        <h1 class="brand">Swim Video Coach</h1>
+        <p class="tagline">Build a swimmer profile, find when they need help most, suggest a short video set, then log what happened after practice.</p>
+      </div>
+      <div class="demo-flag">Illustrative demo data — not a real club roster</div>
+    </header>
+
+    <nav class="steps" id="steps" hidden>
+      <button type="button" data-view="roster">Roster</button>
+      <button type="button" data-view="profile">Profile</button>
+      <button type="button" data-view="needs">Needs analysis</button>
+      <button type="button" data-view="suggest">Video set</button>
+      <button type="button" data-view="log">After practice</button>
+      <button type="button" data-view="history">History &amp; export</button>
+    </nav>
+
+    <main id="app" class="card"></main>
+    <footer class="note">
+      Optional helper for GGU DBA Assignment 1, option 10. The official knowledge base is the suggestion/outcome log, not the YouTube footage itself. Where a close public tutorial exists, it is embedded from YouTube; footage is not stored here.
+    </footer>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
